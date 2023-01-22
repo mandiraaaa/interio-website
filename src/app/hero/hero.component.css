@@ -1,0 +1,45 @@
+.bgimg{
+    background-size: 100% 100%; 
+    position: relative;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+     
+ }
+ h1{
+   position: absolute;
+   top: 47vh;
+   padding-left: 7%;
+   text-align: center;
+   color: rgb(255, 255, 255);
+   font-size: 4rem !important;
+   font-weight: 800;
+ }
+ .hd{
+     position: absolute;
+     top: 56vh;
+     padding-left: 7%;
+     margin-bottom: 100%;
+     text-align: center;
+     color: rgb(255, 255, 255); 
+     font-size: 4rem;
+ }
+ h4{
+     position: absolute;
+     top: 40vh;
+     padding-left: 7%;
+     text-align: center;
+     color: rgb(255, 255, 255);
+     font-weight: 900; 
+ }
+ .hd a{
+     font-size: 1.2rem;
+     text-decoration: none;
+     background-color: aliceblue;
+     padding: 10%;
+     border-color: blue;
+     margin-top: 50%;
+ }
+ 
+ 

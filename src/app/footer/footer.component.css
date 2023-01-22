@@ -1,0 +1,10 @@
+.footer{
+    background-color: var(--primary-color);
+    height: 63vh;
+    padding-top: 10vh;
+    margin-top: 30vh;
+    color: var(--secondary-color);
+}
+.rw2{
+    margin-bottom: 4vh;
+}
