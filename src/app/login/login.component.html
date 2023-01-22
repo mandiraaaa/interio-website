@@ -9,18 +9,18 @@
             </div>
             <div class="col-md-6 col-lg-3">
                  <h6>SIGN IN</h6>
-            
+            <form  autocomplete="off" [formGroup]="loginForm" (ngSubmit)="submitFormLogin()">
             <div class="form-group">
               <label for="email">Email address:</label>
-              <input type="email" class="form-control" id="email">
+              <input type="email" class="form-control" id="email" formControlName="email">
             </div>
 
             <div class="form-group">
               <label for="pwd">Password:</label>
-              <input type="password" class="form-control" id="pwd">
+              <input type="password" class="form-control" id="pwd" formControlName="password">
             </div>
             
-            <button type="button" class="btn btn-secondary btn1">SIGN IN</button>
+            <button type="submit" class="btn btn-secondary btn1">SIGN IN</button>
                 <div class="row rw1">
                   <a class="small text-muted" href="#!">Forgot password?</a>
                   <a class="small text-muted" href="#!">Don't you have an account please register before</a>
@@ -29,31 +29,33 @@
                   <a href="#!" class="small text-muted">Privacy policy</a>
                 </div>
             </div>
+            </form>
           </div>
           <div class="col-md-6 col-lg-4">
           <h6>SIGN UP</h6>
+          <form  autocomplete="off" [formGroup]="registerForm" (ngSubmit)="submitForm()">
             <div class="form-group field1">
               <label for="email">Email address</label>
-              <input type="email" class="form-control" id="email">
+              <input type="email" class="form-control" id="email" formControlName="email">
             </div>
 
             <div class="form-group field1">
               <label for="pwd">Password</label>
-              <input type="password" class="form-control" id="pwd">
+              <input type="password" class="form-control" id="pwd" formControlName="password">
             </div>
 
             <div class="form-group field1">
-              <label for="pwd">Phone Number</label>
-              <input type="password" class="form-control" id="pwd">
+              <label for="pnum">Phone Number</label>
+              <input type="text" class="form-control" id="pnum" formControlName="phone">
             </div>
 
             <div class="form-group field1">
-              <label for="pwd">Adress</label>
-              <input type="password" class="form-control" id="pwd">
+              <label for="address">Adress</label>
+              <input type="text" class="form-control" id="address" formControlName="city">
             </div>
             
-            <button type="button" class="btn btn-secondary btn1">SIGN UP</button>
-
+            <button type="button" class="btn btn-secondary btn1" type="submit" >SIGN UP</button>
+          </form>
           </div>
           </div>
         </div>
