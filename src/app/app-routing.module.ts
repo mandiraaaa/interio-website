@@ -8,6 +8,8 @@ import { CartComponent } from './cart/cart.component';
 import { Sec2Component } from './sec2/sec2.component';
 import { ThankComponent } from './thank/thank.component';
 import { ProductdetailsComponent } from './productdetails/productdetails.component';
+import { ChatComponent } from './chat/chat.component';
+import { AdminPageComponent } from './admin-page/admin-page.component';
 
 const routes: Routes = [
   {path:'',component:HeroComponent},
@@ -16,7 +18,9 @@ const routes: Routes = [
   {path: 'cart', component:CartComponent},
   {path: 'sec2', component:Sec2Component},
   {path: 'thank', component:ThankComponent},
-  {path: 'productdetails', component:ProductdetailsComponent}
+  {path: 'productdetails', component:ProductdetailsComponent},
+  {path: 'chat', component:ChatComponent},
+  {path: 'admin-page', component:AdminPageComponent}
 ];
 
 @NgModule({

@@ -20,6 +20,12 @@ import { Shopwith2Component } from './shopwith2/shopwith2.component';
 import { Shopwith3Component } from './shopwith3/shopwith3.component';
 import { ProductdetailsComponent } from './productdetails/productdetails.component';
 import { Productdetails1Component } from './productdetails1/productdetails1.component';
+import { ChatComponent } from './chat/chat.component';
+import { AdminPageComponent } from './admin-page/admin-page.component';
+import { AdminUsersComponent } from './admin-users/admin-users.component';
+import { AdminOrdersComponent } from './admin-orders/admin-orders.component';
+import { CategoriesComponent } from './categories/categories.component';
+import { ItemsComponent } from './items/items.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +45,13 @@ import { Productdetails1Component } from './productdetails1/productdetails1.comp
     Shopwith2Component,
     Shopwith3Component,
     ProductdetailsComponent,
-    Productdetails1Component
+    Productdetails1Component,
+    ChatComponent,
+    AdminPageComponent,
+    AdminUsersComponent,
+    AdminOrdersComponent,
+    CategoriesComponent,
+    ItemsComponent
   ],
   imports: [
     BrowserModule,
