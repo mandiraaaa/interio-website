@@ -10,6 +10,7 @@ import { ThankComponent } from './thank/thank.component';
 import { ProductdetailsComponent } from './productdetails/productdetails.component';
 import { ChatComponent } from './chat/chat.component';
 import { AdminPageComponent } from './admin-page/admin-page.component';
+import { ContactusComponent } from './contactus/contactus.component';
 
 const routes: Routes = [
   {path:'',component:HeroComponent},
@@ -20,7 +21,8 @@ const routes: Routes = [
   {path: 'thank', component:ThankComponent},
   {path: 'productdetails', component:ProductdetailsComponent},
   {path: 'chat', component:ChatComponent},
-  {path: 'admin-page', component:AdminPageComponent}
+  {path: 'admin', component:AdminPageComponent},
+  {path: 'contactus', component:ContactusComponent}
 ];
 
 @NgModule({

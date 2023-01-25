@@ -26,6 +26,7 @@ import { AdminUsersComponent } from './admin-users/admin-users.component';
 import { AdminOrdersComponent } from './admin-orders/admin-orders.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { ItemsComponent } from './items/items.component';
+import { ContactusComponent } from './contactus/contactus.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { ItemsComponent } from './items/items.component';
     AdminUsersComponent,
     AdminOrdersComponent,
     CategoriesComponent,
-    ItemsComponent
+    ItemsComponent,
+    ContactusComponent
   ],
   imports: [
     BrowserModule,

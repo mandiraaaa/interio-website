@@ -25,7 +25,7 @@ export class UserService {
  }
 
  getUserByEmailAndPassword(employee: User): Observable<string>{
-  return this.httpClient.post(`${this.url}/users/login`, employee, { responseType: 'text' });
+  return this.httpClient.post<any>(`${this.url}/users/login`, employee, {withCredentials: true});
 
  }
  getEmployee(id: string): Observable<User> {

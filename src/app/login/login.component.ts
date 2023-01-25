@@ -80,7 +80,7 @@ export class LoginComponent implements OnInit {
     this.userService.getUserByEmailAndPassword(user)
       .subscribe({
         next: () => {
-        this.router.navigate(['']);
+        this.router.navigate(['/hero']);
          alert(" create employee");
         },
         error: (error) => {

@@ -1,10 +1,12 @@
 export interface Products {
     _id?: string;
    name?: string;
-   address?: 'junior' | 'mid' | 'senior';
-   phone: string;
-   status: string;
-   totalPrice: string;
-   user: string;
-   dateOrdered: string;
+   description?: string;
+   richDescription: string;
+   image: string;
+   images: string;
+   price: string;
+   category: string;
+   countInStock: string;
+   dateCreated: string;
 }

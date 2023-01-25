@@ -25,7 +25,7 @@
     border: 1px dashed rgb(196, 196, 196);
     border-radius: 8px;
     padding:4px;
-    margin-top: 40px;
+    margin-top: 100px;
 }
 .chatdiv
 {
@@ -64,8 +64,9 @@
     font-family: 'poppins-r';
     color: black;
     border-radius: 4px;
-    position: fixed;
+    position: relative;
     bottom: 58px;
+    margin-top: 75vh;
     margin-left: 2px;
     font-size: 1vw;
 }
