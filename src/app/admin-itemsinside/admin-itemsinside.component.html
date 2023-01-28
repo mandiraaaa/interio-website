@@ -1,0 +1,41 @@
+<div class="container mt-3">
+    <h2>Items Details</h2>
+    <div class="row rw1">
+        <button type="button" class="btn btn-secondary btn1">+ADD</button>
+    </div>         
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Product ID</th>
+          <th>Image</th>
+          <th>Price</th>
+          <th>Stock</th>
+          <th>Categoory</th>
+          <th>Created at</th>
+          <th>Edit/Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let products of productssdata">
+          <td>{{ products.name }}</td>
+          <td>{{ products._id }}</td>
+          <td>{{ products.image }}</td>
+          <td>{{ products.price }}</td>
+          <td>{{ products.countInStock }}</td>
+          <td>{{ products.category }}</td>
+          <td>{{ products.dateCreated }}</td>
+          <td>
+            <button type="button" class="btn btn-secondary btn2" >
+                <i class="fa fa-edit"></i>
+            </button>
+            <button type="button" class="btn btn-secondary btn3">
+                <i class="fa fa-times"></i>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+

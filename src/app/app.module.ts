@@ -27,6 +27,10 @@ import { AdminOrdersComponent } from './admin-orders/admin-orders.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { ItemsComponent } from './items/items.component';
 import { ContactusComponent } from './contactus/contactus.component';
+import { AdminUserinsideComponent } from './admin-userinside/admin-userinside.component';
+import { AdminItemsinsideComponent } from './admin-itemsinside/admin-itemsinside.component';
+import { AdminOrderinsideComponent } from './admin-orderinside/admin-orderinside.component';
+import { AdminCategoryinsideComponent } from './admin-categoryinside/admin-categoryinside.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +57,11 @@ import { ContactusComponent } from './contactus/contactus.component';
     AdminOrdersComponent,
     CategoriesComponent,
     ItemsComponent,
-    ContactusComponent
+    ContactusComponent,
+    AdminUserinsideComponent,
+    AdminItemsinsideComponent,
+    AdminOrderinsideComponent,
+    AdminCategoryinsideComponent
   ],
   imports: [
     BrowserModule,

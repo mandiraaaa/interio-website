@@ -11,6 +11,10 @@ import { ProductdetailsComponent } from './productdetails/productdetails.compone
 import { ChatComponent } from './chat/chat.component';
 import { AdminPageComponent } from './admin-page/admin-page.component';
 import { ContactusComponent } from './contactus/contactus.component';
+import { AdminUserinsideComponent } from './admin-userinside/admin-userinside.component';
+import { AdminItemsinsideComponent } from './admin-itemsinside/admin-itemsinside.component';
+import { AdminOrderinsideComponent } from './admin-orderinside/admin-orderinside.component';
+import { AdminCategoryinsideComponent } from './admin-categoryinside/admin-categoryinside.component';
 
 const routes: Routes = [
   {path:'',component:HeroComponent},
@@ -22,7 +26,11 @@ const routes: Routes = [
   {path: 'productdetails', component:ProductdetailsComponent},
   {path: 'chat', component:ChatComponent},
   {path: 'admin', component:AdminPageComponent},
-  {path: 'contactus', component:ContactusComponent}
+  {path: 'contactus', component:ContactusComponent},
+  {path: 'admin-userinside', component:AdminUserinsideComponent},
+  {path: 'admin-itemsinside', component:AdminItemsinsideComponent},
+  {path: 'admin-orderinside', component:AdminOrderinsideComponent},
+  {path: 'admin-categoryinside', component:AdminCategoryinsideComponent}
 ];
 
 @NgModule({

@@ -1,10 +1,10 @@
 export interface Orders {
     _id?: string;
    orderItems?: string;
-   address?: 'junior' | 'mid' | 'senior';
+   address?: string;
    phone: string;
    status: string;
    totalPrice: string;
-   user: string;
+   email?: string;
    dateOrdered: string;
 }

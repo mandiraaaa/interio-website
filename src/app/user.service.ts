@@ -18,6 +18,10 @@ export class UserService {
        this.userss$.next(userss);
      });
  }
+
+ Getusers(){
+  return this.httpClient.get(`${this.url}/users/`);
+}
  
  getEmployees(): Subject<User[]> {
    this.refreshEmployees();
