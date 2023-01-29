@@ -31,7 +31,10 @@ import { AdminUserinsideComponent } from './admin-userinside/admin-userinside.co
 import { AdminItemsinsideComponent } from './admin-itemsinside/admin-itemsinside.component';
 import { AdminOrderinsideComponent } from './admin-orderinside/admin-orderinside.component';
 import { AdminCategoryinsideComponent } from './admin-categoryinside/admin-categoryinside.component';
-
+import { EditCategoryComponent } from './edit-category/edit-category.component';
+import { AddCategoryComponent } from './add-category/add-category.component';
+import { FormsModule } from '@angular/forms'; 
+import { RouterModule } from '@angular/router';
 @NgModule({
   declarations: [
     AppComponent,
@@ -61,12 +64,15 @@ import { AdminCategoryinsideComponent } from './admin-categoryinside/admin-categ
     AdminUserinsideComponent,
     AdminItemsinsideComponent,
     AdminOrderinsideComponent,
-    AdminCategoryinsideComponent
+    AdminCategoryinsideComponent,
+    EditCategoryComponent,
+    AddCategoryComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
     ReactiveFormsModule 
   ],
   providers: [],

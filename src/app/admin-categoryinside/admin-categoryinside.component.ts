@@ -3,14 +3,15 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { CategoriesService } from '../categories.service';
 import { Categories } from '../categories';
-
+import { ActivatedRoute, Router } from '@angular/router';
 @Component({
   selector: 'app-admin-categoryinside',
   templateUrl: './admin-categoryinside.component.html',
   styleUrls: ['./admin-categoryinside.component.css']
 })
 export class AdminCategoryinsideComponent {
-  categoriessdata: any;
+  categoriessdata: any [] = [];
+  router: any;
   constructor(private CategoriesService: CategoriesService, private httpClient: HttpClient){}
 
   ngOnInit():void{
@@ -39,4 +40,8 @@ export class AdminCategoryinsideComponent {
   //   this.CategoriesService.DeleteCategory(_id);
   //   console.log('work!!!!!!!!!');
   // }
+EditOneCategory (_id:string){
+  this.router.navigate(['edit',_id])
+}
+  
 }
