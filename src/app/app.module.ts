@@ -35,6 +35,7 @@ import { EditCategoryComponent } from './edit-category/edit-category.component';
 import { AddCategoryComponent } from './add-category/add-category.component';
 import { FormsModule } from '@angular/forms'; 
 import { RouterModule } from '@angular/router';
+import { AddOrderComponent } from './add-order/add-order.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -66,7 +67,8 @@ import { RouterModule } from '@angular/router';
     AdminOrderinsideComponent,
     AdminCategoryinsideComponent,
     EditCategoryComponent,
-    AddCategoryComponent
+    AddCategoryComponent,
+    AddOrderComponent
   ],
   imports: [
     BrowserModule,

@@ -6,7 +6,7 @@ export interface Products {
    image: string;
    images: string;
    price: string;
-   category: string;
+   //category: string;
    countInStock: string;
    dateCreated: string;
 }

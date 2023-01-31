@@ -57,6 +57,7 @@ export class LoginComponent implements OnInit {
   
   submitFormLogin() {
     this.find(this.loginForm.value);
+    this.router.navigateByUrl('/productdetails');
     //this.formSubmitted.emit(this.loginForm.value);
   }
 
@@ -65,6 +66,7 @@ export class LoginComponent implements OnInit {
     this.userService.createEmployee(user)
       .subscribe({
         next: () => {
+          this.router.navigateByUrl('/productdetails');
          // this.router.navigate(['/employees']);
          alert(" create employee");
         },
@@ -80,11 +82,11 @@ export class LoginComponent implements OnInit {
     this.userService.getUserByEmailAndPassword(user)
       .subscribe({
         next: () => {
-        this.router.navigate(['/hero']);
-         alert(" create employee");
+        this.router.navigate(['/productdetails']);
+         alert(" login successfully");
         },
         error: (error) => {
-          alert("Failed to create employee");
+          alert("Failed to login");
           console.error(error);
         }
       });

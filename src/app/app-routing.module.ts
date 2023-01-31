@@ -17,6 +17,10 @@ import { AdminOrderinsideComponent } from './admin-orderinside/admin-orderinside
 import { AdminCategoryinsideComponent } from './admin-categoryinside/admin-categoryinside.component';
 import { EditCategoryComponent } from './edit-category/edit-category.component';
 import { AddCategoryComponent } from './add-category/add-category.component';
+import { AddOrderComponent } from './add-order/add-order.component';
+import { Shopwith1Component } from './shopwith1/shopwith1.component';
+import { Shopwith2Component } from './shopwith2/shopwith2.component';
+import { Shopwith3Component } from './shopwith3/shopwith3.component';
 
 const routes: Routes = [
   {path:'',component:HeroComponent},
@@ -34,7 +38,12 @@ const routes: Routes = [
   {path: 'admin-orderinside', component:AdminOrderinsideComponent},
   {path: 'admin-categoryinside', component:AdminCategoryinsideComponent},
   {path: 'edit/:_id', component:EditCategoryComponent},
-  {path: 'add-category', component:AddCategoryComponent}
+  {path: 'add-category', component:AddCategoryComponent},
+  {path: 'add-order', component:AddOrderComponent},
+  {path: 'shopwith1', component:Shopwith1Component},
+  {path: 'shopwith2', component:Shopwith2Component},
+  {path: 'shopwith3', component:Shopwith3Component},
+  {path: 'hero', component:HeroComponent}
 ];
 
 @NgModule({

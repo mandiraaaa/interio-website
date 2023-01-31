@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, Subject, tap } from 'rxjs';
 import { User } from './users';
  
@@ -28,10 +28,19 @@ export class UserService {
    return this.userss$;
  }
 
- getUserByEmailAndPassword(employee: User): Observable<string>{
-  return this.httpClient.post<any>(`${this.url}/users/login`, employee, {withCredentials: true});
+//  getUserByEmailAndPassword(employee: User): Observable<string>{
+//   return this.httpClient.post<any>(`${this.url}/users/login`, employee, {withCredentials: true});
 
- }
+//  }
+getUserByEmailAndPassword(employee: User): Observable<string>{
+  let headers = new HttpHeaders({
+    'Access-Control-Allow-Origin': '*'
+  });
+
+  return this.httpClient.post<any>(`${this.url}/users/login`, employee, {headers: headers, withCredentials: true});
+}
+
+
  getEmployee(id: string): Observable<User> {
    return this.httpClient.get<User>(`${this.url}/employees/${id}`);
  }

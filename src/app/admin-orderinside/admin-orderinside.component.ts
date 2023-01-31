@@ -15,9 +15,24 @@ export class AdminOrderinsideComponent {
   constructor(private OrdersService: OrdersService, private httpClient: HttpClient){}
 
   ngOnInit(){
-    this.OrdersService.GetOrder().subscribe((response: any) =>{
+    this.GetOrder();
+    // this.OrdersService.GetOrder().subscribe((response: any) =>{
+    //   console.log(response);
+    //   this.ordersdata=response;
+    // })
+  }
+
+  GetOrder(){
+    this.OrdersService.GetAllOrder().subscribe((response: any)=>{
       console.log(response);
-      this.ordersdata=response;
+      this.ordersdata = response;
+    });
+  }
+
+  DeleteOneOrder(_id:string){
+    this.OrdersService.DeleteOrder(_id).subscribe((response: any) =>{
+      console.log(response);
+      this.GetOrder();
     })
   }
 }

@@ -14,15 +14,16 @@ export class AdminItemsinsideComponent {
   constructor(private ProductService: ProductService, private httpClient: HttpClient){}
 
   ngOnInit(){
+    
     this.ProductService.GetProduct().subscribe((response: any) =>{
       console.log(response);
       this.productssdata=response;
     });
 
-    this.ProductService.DeleProduct().subscribe((response: any) =>{
-      console.log(response);
-      this.productssdata=response;
-    });
+    // this.ProductService.DeleProduct().subscribe((response: any) =>{
+    //   console.log(response);
+    //   this.productssdata=response;
+    // });
       
   }
 }

@@ -8,3 +8,12 @@
 .rw2{
     margin-bottom: 4vh;
 }
+.p{
+    margin-top: 9vh;
+}
+
+@media screen and (max-width:800px){
+    .footer{
+        height: 100vh;
+    }
+}

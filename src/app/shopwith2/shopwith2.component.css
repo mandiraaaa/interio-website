@@ -10,3 +10,16 @@ h4{
     width:90%;
     height: 60vh;
 }
+.btn1{
+    width: 90%;
+}
+
+@media screen and (max-width:800px){
+    .cl1{
+        padding-top: 5vh;
+    }
+
+    h4{
+        padding-top: 15vh;
+    }
+}

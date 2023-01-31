@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Categories } from './categories';
 import { Observable } from 'rxjs';
 import { Route } from '@angular/router';
+
 @Injectable({
   providedIn: 'root'
 })
