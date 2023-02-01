@@ -36,6 +36,12 @@ import { AddCategoryComponent } from './add-category/add-category.component';
 import { FormsModule } from '@angular/forms'; 
 import { RouterModule } from '@angular/router';
 import { AddOrderComponent } from './add-order/add-order.component';
+import { SofadetailsComponent } from './sofadetails/sofadetails.component';
+import { Sofadetails2Component } from './sofadetails2/sofadetails2.component';
+import { WardrobedetailsComponent } from './wardrobedetails/wardrobedetails.component';
+import { Wardrobedetails2Component } from './wardrobedetails2/wardrobedetails2.component';
+import { DiningtdetailsComponent } from './diningtdetails/diningtdetails.component';
+import { Diningtdetails2Component } from './diningtdetails2/diningtdetails2.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -68,7 +74,13 @@ import { AddOrderComponent } from './add-order/add-order.component';
     AdminCategoryinsideComponent,
     EditCategoryComponent,
     AddCategoryComponent,
-    AddOrderComponent
+    AddOrderComponent,
+    SofadetailsComponent,
+    Sofadetails2Component,
+    WardrobedetailsComponent,
+    Wardrobedetails2Component,
+    DiningtdetailsComponent,
+    Diningtdetails2Component
   ],
   imports: [
     BrowserModule,

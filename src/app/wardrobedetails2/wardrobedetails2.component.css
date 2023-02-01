@@ -1,0 +1,21 @@
+.rw1{
+    padding-top: 0vh !important;
+}
+.img{
+    width: 100%;
+}
+.clprice{
+    text-align: center;
+    margin-top: 2vh;
+}
+.quantity {
+    display: flex;
+    align-items: center;
+  }
+  
+  .quantity__input {
+    width: 100px;
+    text-align: center;
+    border-color:black ;
+    border-radius: 5px;
+  }

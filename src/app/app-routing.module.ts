@@ -21,6 +21,12 @@ import { AddOrderComponent } from './add-order/add-order.component';
 import { Shopwith1Component } from './shopwith1/shopwith1.component';
 import { Shopwith2Component } from './shopwith2/shopwith2.component';
 import { Shopwith3Component } from './shopwith3/shopwith3.component';
+import { SofadetailsComponent } from './sofadetails/sofadetails.component';
+import { Sofadetails2Component } from './sofadetails2/sofadetails2.component';
+import { WardrobedetailsComponent } from './wardrobedetails/wardrobedetails.component';
+import { Wardrobedetails2Component } from './wardrobedetails2/wardrobedetails2.component';
+import { DiningtdetailsComponent } from './diningtdetails/diningtdetails.component';
+import { Diningtdetails2Component } from './diningtdetails2/diningtdetails2.component';
 
 const routes: Routes = [
   {path:'',component:HeroComponent},
@@ -43,7 +49,13 @@ const routes: Routes = [
   {path: 'shopwith1', component:Shopwith1Component},
   {path: 'shopwith2', component:Shopwith2Component},
   {path: 'shopwith3', component:Shopwith3Component},
-  {path: 'hero', component:HeroComponent}
+  {path: 'hero', component:HeroComponent},
+  {path: 'sofadetails', component:SofadetailsComponent},
+  {path: 'sofadetails2', component:Sofadetails2Component},
+  {path: 'wardrobedetails', component:WardrobedetailsComponent},
+  {path: 'wardrobedetails2', component:Wardrobedetails2Component},
+  {path: 'diningtdetails', component:DiningtdetailsComponent},
+  {path: 'diningt2details', component:Diningtdetails2Component}
 ];
 
 @NgModule({

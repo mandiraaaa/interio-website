@@ -1,0 +1,46 @@
+.rw1{
+    margin-top: 19vh;
+}
+.img1{
+    width: 100%;
+    
+}
+h3{
+    font-size: 1.3rem;
+    font-weight: 900;
+    padding-top: 12vh;
+    color: #030E39;
+}
+p{
+    padding-top: 5vh;
+    font-size: 1.1rem;
+}
+.cl1{
+    align-items: center;
+}
+h4{
+    padding-top: 4vh;
+    font-weight: 700;
+    color: red;
+    font-size: 2rem;
+}
+.clprice{
+    text-align: center;
+    margin-top: 2vh;
+}
+.quantity {
+    display: flex;
+    align-items: center;
+  }
+  
+  .quantity__input {
+    width: 160px;
+    height: 6vh;
+    text-align: center;
+    border-color:black ;
+    border-radius: 5px;
+    margin-top: 4vh;
+  }
+  .rww{
+    padding-top: 5vh;
+  }

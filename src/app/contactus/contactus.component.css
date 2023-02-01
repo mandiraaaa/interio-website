@@ -8,3 +8,15 @@ h5{
     padding-top: 20vh;
     font-weight: 600;
 }
+
+@media screen and (max-width:800px){
+    .hd{
+        font-size: 1rem;
+    }
+    .img{
+        width: 80%;
+    }
+    .cl2{
+        width: 100%;
+    }
+}

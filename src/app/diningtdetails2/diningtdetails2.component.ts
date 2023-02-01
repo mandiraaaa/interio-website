@@ -5,14 +5,13 @@ import {ProductService} from '../product.service';
 import { Products } from '../products';
 
 @Component({
-  selector: 'app-shopwith1',
-  templateUrl: './shopwith1.component.html',
-  styleUrls: ['./shopwith1.component.css']
+  selector: 'app-diningtdetails2',
+  templateUrl: './diningtdetails2.component.html',
+  styleUrls: ['./diningtdetails2.component.css']
 })
-export class Shopwith1Component {
+export class Diningtdetails2Component {
   porductdata: any;
   constructor(private ProductService: ProductService, private httpClient: HttpClient){}
-
   ngOnInit(){
     this.ProductService.GetProduct().subscribe((response: any) =>{
       console.log(response);
