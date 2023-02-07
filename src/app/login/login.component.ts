@@ -68,7 +68,7 @@ export class LoginComponent implements OnInit {
         next: () => {
           this.router.navigateByUrl('/productdetails');
          // this.router.navigate(['/employees']);
-         alert(" create employee");
+         alert(" create account");
         },
         error: (error) => {
           alert("Failed to create employee");
